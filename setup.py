@@ -21,8 +21,8 @@ setup(
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Topic :: Scientific/Engineering :: Image Recognition'
     ],
-    package_dir={'detect': '.'},
-    packages=find_packages(where='.'),
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
     python_requires='>=3.10',
     install_requires=[
         'geopandas>=0.10',
@@ -46,8 +46,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'flair-detect=src.zone_detect.main:main',
-            'flair=src.flair.main:main'
+            'flair-detect=zone_detect.main:main',
+            'flair=flair.main:main'
         ]
     }
 )
