@@ -12,10 +12,10 @@ from datetime import timedelta
 from pytorch_lightning import seed_everything 
 from pytorch_lightning.utilities.rank_zero import rank_zero_only  
 
-from src.flair.tasks import train, predict
-from src.flair.tasks_utils import get_data_module, get_segmentation_module, gather_paths
-from src.flair.metrics import metrics
-from src.flair.utils import read_config, print_recap
+from .tasks import train, predict
+from .tasks_utils import get_data_module, get_segmentation_module, gather_paths
+from .metrics import metrics
+from .utils import read_config, print_recap
 
 
 argParser = argparse.ArgumentParser()

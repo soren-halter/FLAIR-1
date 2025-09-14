@@ -1,7 +1,7 @@
 from torch.utils.data import DataLoader
 from pytorch_lightning import LightningDataModule
 
-from src.flair.data_loader import fit_dataset, predict_dataset
+from .data_loader import fit_dataset, predict_dataset
 
 class flair_datamodule(LightningDataModule):
 

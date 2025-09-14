@@ -7,9 +7,9 @@ from torch import nn
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 import albumentations as A
 
-from src.flair.model import FLAIR_ModelFactory
-from src.flair.data_module import flair_datamodule
-from src.flair.task_module import segmentation_task_training, segmentation_task_predict
+from .model import FLAIR_ModelFactory
+from .data_module import flair_datamodule
+from .task_module import segmentation_task_training, segmentation_task_predict
 
 
 

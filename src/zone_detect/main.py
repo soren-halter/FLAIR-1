@@ -12,9 +12,9 @@ from pytorch_lightning.utilities.rank_zero import rank_zero_only
 from rasterio.features import geometry_window
 from tqdm import tqdm
 
-from src.zone_detect.slicing_job import slice_extent, create_polygon_from_bounds
-from src.zone_detect.model import load_model
-from src.zone_detect.dataset import Sliced_Dataset, convert
+from .slicing_job import slice_extent, create_polygon_from_bounds
+from .model import load_model
+from .dataset import Sliced_Dataset, convert
 
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
